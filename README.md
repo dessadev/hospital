@@ -66,3 +66,20 @@ db.medicos.insertMany([
   { nome: "Dra. Mariana Santos", tipo: "Especialista", especialidades: ["Cardiologia"], contato: { telefone: "998877665", email: "mariana.santos@email.com" }, documentos: { CPF: "215.314.151-41", RG: "DF215314" } }
 ]);
 
+---------------------------
+
+### 2) **Inclua ao menos sete especialidades.**
+
+Considere que entre as especialidades há **pediatria**, **clínica geral**, **gastroenterologia** e **dermatologia**. Aqui está o script para povoar as especialidades no banco de dados:
+
+```javascript
+db.especialidades.insertMany([
+  { nome: "Pediatria", descricao: "Especialidade médica voltada para o atendimento de crianças e adolescentes." },
+  { nome: "Clínica Geral", descricao: "Especialidade médica que lida com diagnósticos e tratamentos gerais." },
+  { nome: "Gastroenterologia", descricao: "Especialidade médica focada no sistema digestivo e doenças relacionadas." },
+  { nome: "Dermatologia", descricao: "Especialidade médica dedicada ao estudo da pele e suas doenças." },
+  { nome: "Cardiologia", descricao: "Especialidade médica voltada ao estudo e tratamento das doenças do coração." },
+  { nome: "Neurologia", descricao: "Especialidade médica que lida com o sistema nervoso e suas patologias." },
+  { nome: "Ortopedia", descricao: "Especialidade médica focada no diagnóstico e tratamento de doenças ósseas e articulares." }
+]);
+

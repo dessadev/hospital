@@ -125,6 +125,9 @@ db.medicos.insertMany([
     documentos: { CPF: "215.314.151-41", RG: "DF215314" } 
   }]);
 
+```javascript
+
+
 ---
 ---
 

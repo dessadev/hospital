@@ -52,8 +52,7 @@ Crie scripts de povoamento dos documentos desenvolvidas na atividade anterior.
 
 1) **Inclua ao menos dez médicos de diferentes especialidades.**
 
-```javascript
-db.medicos.insertMany([
+`db.medicos.insertMany([
   { nome: "Dr. Rafael Almeida", tipo: "Especialista", especialidades: ["Pediatria"], contato: { telefone: "123456789", email: "rafael.almeida@email.com" }, documentos: { CPF: "123.456.789-10", RG: "MG123456" } },
   { nome: "Dra. Isabel Cardoso", tipo: "Generalista", especialidades: ["Clínica Geral"], contato: { telefone: "987654321", email: "isabel.cardoso@email.com" }, documentos: { CPF: "987.654.321-00", RG: "SP987654" } },
   { nome: "Dr. Fábio Costa", tipo: "Especialista", especialidades: ["Gastroenterologia"], contato: { telefone: "112233445", email: "fabio.costa@email.com" }, documentos: { CPF: "456.123.789-21", RG: "RJ456123" } },
@@ -64,7 +63,7 @@ db.medicos.insertMany([
   { nome: "Dra. Fernanda Rocha", tipo: "Especialista", especialidades: ["Ortopedia"], contato: { telefone: "667788990", email: "fernanda.rocha@email.com" }, documentos: { CPF: "765.432.109-98", RG: "GO765432" } },
   { nome: "Dr. Ricardo Souza", tipo: "Residente", especialidades: ["Gastroenterologia"], contato: { telefone: "334455667", email: "ricardo.souza@email.com" }, documentos: { CPF: "910.111.213-31", RG: "SC910111" } },
   { nome: "Dra. Mariana Santos", tipo: "Especialista", especialidades: ["Cardiologia"], contato: { telefone: "998877665", email: "mariana.santos@email.com" }, documentos: { CPF: "215.314.151-41", RG: "DF215314" } }
-]);
+]);`
 
 ---
 

@@ -124,7 +124,7 @@ db.medicos.insertMany([
     contato: { telefone: "998877665", email: "mariana.santos@email.com" }, 
     documentos: { CPF: "215.314.151-41", RG: "DF215314" } 
   }
-]);
+]);```
 
 ---
 

@@ -52,7 +52,8 @@ Crie scripts de povoamento dos documentos desenvolvidas na atividade anterior.
 
 ### 1) **Inclua ao menos dez médicos de diferentes especialidades.**
 
-```db.medicos.insertMany([
+```
+db.medicos.insertMany([
   { 
     nome: "Dr. Rafael Almeida", 
     tipo: "Especialista", 

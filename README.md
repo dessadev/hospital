@@ -126,6 +126,8 @@ db.medicos.insertMany([
   }]);
 
 ---
+---
+
 
 ### 2) **Inclua ao menos sete especialidades.**
 

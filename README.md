@@ -52,8 +52,7 @@ Crie scripts de povoamento dos documentos desenvolvidas na atividade anterior.
 
 ### 1) **Inclua ao menos dez médicos de diferentes especialidades.**
 
-```javascript
-db.medicos.insertMany([
+`db.medicos.insertMany([
   { 
     nome: "Dr. Rafael Almeida", 
     tipo: "Especialista", 
@@ -123,12 +122,7 @@ db.medicos.insertMany([
     especialidades: ["Cardiologia"], 
     contato: { telefone: "998877665", email: "mariana.santos@email.com" }, 
     documentos: { CPF: "215.314.151-41", RG: "DF215314" } 
-  }]);
-
-```javascript
-
-
----
+  }]); `
 ---
 
 

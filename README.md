@@ -48,9 +48,7 @@ Também é necessário controlar quais profissionais de enfermaria estarão resp
 
 Crie scripts de povoamento dos documentos desenvolvidas na atividade anterior.
 
-### Atividades:
-
-### 1) **Inclua ao menos dez médicos de diferentes especialidades.**
+### **Inclua ao menos dez médicos de diferentes especialidades.**
 
 ```
 db.medicos.insertMany([
@@ -128,7 +126,7 @@ db.medicos.insertMany([
 
 ---
 
-### 2) **Inclua ao menos sete especialidades.**
+### **Inclua ao menos sete especialidades.**
 
 Considere que entre as especialidades há **pediatria**, **clínica geral**, **gastroenterologia** e **dermatologia**. Aqui está o script para povoar as especialidades no banco de dados:
 
@@ -145,4 +143,171 @@ db.especialidades.insertMany([
 ```
 
 ---
+
+### **Inclua ao menos quinze pacientes.**
+
+```
+db.pacientes.insertMany([
+  {
+    nome: "Carlos Eduardo Silva",
+    data_nascimento: new Date("1985-06-15"),
+    endereco: {
+      rua: "Avenida Paulista",
+      numero: 1000,
+      bairro: "Bela Vista",
+      cidade: "São Paulo",
+      estado: "SP",
+      cep: "01310-100"
+    },
+    telefone: "911223344",
+    email: "carlos.silva@email.com",
+    documentos: { CPF: "123.456.789-10", RG: "SP123456" },
+    convenio: { nome: "Unimed", cnpj: "01.123.456/0001-99", tempo_carencia: 30 }
+  },
+  {
+    nome: "Juliana Ferreira Santos",
+    data_nascimento: new Date("1990-11-02"),
+    endereco: {
+      rua: "Rua dos Três Irmãos",
+      numero: 500,
+      bairro: "Jardim São Luís",
+      cidade: "São Paulo",
+      estado: "SP",
+      cep: "04758-000"
+    },
+    telefone: "912345678",
+    email: "juliana.santos@email.com",
+    documentos: { CPF: "234.567.890-12", RG: "SP234567" },
+    convenio: { nome: "Bradesco Saúde", cnpj: "02.234.567/0001-88", tempo_carencia: 60 }
+  },
+  {
+    nome: "Ricardo Alves Lima",
+    data_nascimento: new Date("1978-03-10"),
+    endereco: {
+      rua: "Rua dos Três Corações",
+      numero: 300,
+      bairro: "Vila Progredior",
+      cidade: "São Paulo",
+      estado: "SP",
+      cep: "03929-000"
+    },
+    telefone: "913456789",
+    email: "ricardo.lima@email.com",
+    documentos: { CPF: "345.678.901-23", RG: "SP345678" },
+    convenio: { nome: "Amil", cnpj: "03.345.678/0001-77", tempo_carencia: 45 }
+  },
+  {
+    nome: "Fernanda Costa Ribeiro",
+    data_nascimento: new Date("1995-08-21"),
+    endereco: {
+      rua: "Rua dos Três Irmãos",
+      numero: 1020,
+      bairro: "Tatuapé",
+      cidade: "São Paulo",
+      estado: "SP",
+      cep: "03310-000"
+    },
+    telefone: "914567890",
+    email: "fernanda.ribeiro@email.com",
+    documentos: { CPF: "456.789.012-34", RG: "SP456789" },
+    convenio: { nome: "SulAmérica", cnpj: "04.456.789/0001-66", tempo_carencia: 30 }
+  },
+  {
+    nome: "Marcelo Souza Pereira",
+    data_nascimento: new Date("1980-12-14"),
+    endereco: {
+      rua: "Rua da Consolação",
+      numero: 800,
+      bairro: "Consolação",
+      cidade: "São Paulo",
+      estado: "SP",
+      cep: "01301-000"
+    },
+    telefone: "915678901",
+    email: "marcelo.souza@email.com",
+    documentos: { CPF: "567.890.123-45", RG: "SP567890" },
+    convenio: { nome: "Golden Cross", cnpj: "05.567.890/0001-55", tempo_carencia: 90 }
+  },
+  {
+    nome: "Patrícia Almeida Moreira",
+    data_nascimento: new Date("1992-02-17"),
+    endereco: {
+      rua: "Avenida Brigadeiro Faria Lima",
+      numero: 4000,
+      bairro: "Jardim Paulistano",
+      cidade: "São Paulo",
+      estado: "SP",
+      cep: "01452-000"
+    },
+    telefone: "916789012",
+    email: "patricia.moreira@email.com",
+    documentos: { CPF: "678.901.234-56", RG: "SP678901" },
+    convenio: { nome: "Porto Seguro Saúde", cnpj: "06.678.901/0001-44", tempo_carencia: 120 }
+  },
+  {
+    nome: "Giovanni Ribeiro Oliveira",
+    data_nascimento: new Date("1987-09-30"),
+    endereco: {
+      rua: "Rua dos Três Irmãos",
+      numero: 450,
+      bairro: "Cidade Ademar",
+      cidade: "São Paulo",
+      estado: "SP",
+      cep: "04847-000"
+    },
+    telefone: "917890123",
+    email: "giovanni.oliveira@email.com",
+    documentos: { CPF: "789.012.345-67", RG: "SP789012" },
+    convenio: { nome: "Santa Casa Saúde", cnpj: "07.789.012/0001-33", tempo_carencia: 60 }
+  },
+  {
+    nome: "Cláudia Regina Oliveira",
+    data_nascimento: new Date("1983-04-25"),
+    endereco: {
+      rua: "Rua dos Três Corações",
+      numero: 80,
+      bairro: "Ipiranga",
+      cidade: "São Paulo",
+      estado: "SP",
+      cep: "04222-000"
+    },
+    telefone: "918901234",
+    email: "claudia.oliveira@email.com",
+    documentos: { CPF: "890.123.456-78", RG: "SP890123" },
+    convenio: { nome: "Unimed", cnpj: "08.890.123/0001-22", tempo_carencia: 30 }
+  },
+  {
+    nome: "Amanda Costa Lima",
+    data_nascimento: new Date("1993-07-19"),
+    endereco: {
+      rua: "Rua do Rio",
+      numero: 320,
+      bairro: "Campo Belo",
+      cidade: "São Paulo",
+      estado: "SP",
+      cep: "04609-000"
+    },
+    telefone: "919012345",
+    email: "amanda.lima@email.com",
+    documentos: { CPF: "901.234.567-89", RG: "SP901234" },
+    convenio: { nome: "Bradesco Saúde", cnpj: "09.901.234/0001-11", tempo_carencia: 60 }
+  },
+  {
+    nome: "Luana Martins Costa",
+    data_nascimento: new Date("1989-11-11"),
+    endereco: {
+      rua: "Rua dos Três Irmãos",
+      numero: 600,
+      bairro: "Vila Madalena",
+      cidade: "São Paulo",
+      estado: "SP",
+      cep: "05435-000"
+    },
+    telefone: "920123456",
+    email: "luana.costa@email.com",
+    documentos: { CPF: "012.345.678-90", RG: "SP012345" },
+    convenio: { nome: "Amil", cnpj: "10.012.345/0001-66", tempo_carencia: 90 }
+  }
+]);
+```
 
